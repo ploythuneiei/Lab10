@@ -22,6 +22,8 @@ int main() {
         sum2 = sum2 + score*score;
     }
 
+    data.close();
+
     double mean = sum/i;
     double sd = sqrt((sum2/i)-(mean*mean));
 
@@ -29,4 +31,6 @@ int main() {
     cout << setprecision(3);
     cout << "Mean = " << mean << endl;
     cout << "Standard deviation = " << sd << endl;
+
+    return 0;
 }
