@@ -3,7 +3,6 @@
 #include<string>
 #include<cmath>
 #include<iomanip>
-#include<cstdlib>
 using namespace std;
 
 int main() {
@@ -11,13 +10,13 @@ int main() {
     data.open("score.txt");
 
     int i = 0;
-    double sum = 0, sum2 = 0;
+    double sum = 0, sum2 = 0, score;
     string scoretxt;
     
 
     while(getline(data, scoretxt)){
         i++;
-        double score = stod(scoretxt);
+        score = stod(scoretxt);
         sum = sum + score;
         sum2 = sum2 + score*score;
     }
