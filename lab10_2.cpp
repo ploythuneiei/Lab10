@@ -8,6 +8,13 @@ int main (){
 	ofstream dest;
 	source.open("cheerbook.txt") ;
 	dest.open("cheerbook_copy.txt");
+	string text;
+	
+	dest << "-------------------- BOOM ---------------------\n";
+	while(getline(source, text)){
+		cout << text << endl;
+	}
+	dest << "-------------------- HA!! ---------------------";
 	
 	//กรอก Code เฉพาะส่วนนี้ ให้สอดคล้องกับโจทย์และ Code ส่วนอื่น ๆ 
 	//โดยห้ามแก้ไข Code ในส่วนอื่น ๆ
